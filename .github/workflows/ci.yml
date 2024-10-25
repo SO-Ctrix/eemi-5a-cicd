@@ -21,9 +21,13 @@ jobs:
         run: ls
 
       - name : "Install dependencies"
-        run: | 
-          npm install
-          node -v
+        run: npm ci 
+
+      - name: "Build"
+        run: echo "Build"
+
+      - name: "Test"
+        run: npm run test
 
       - name: "First step"
         run: | # si il y a plusieurs ligne on met un pipe 
