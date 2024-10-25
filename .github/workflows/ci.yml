@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "First step"
-        run: |
+        run: | # This is a multiline command
           echo "Hello world"
           echo "Second line"
 
