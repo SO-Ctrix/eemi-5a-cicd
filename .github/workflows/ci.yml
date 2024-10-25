@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "First step"
-        run: | # si il y a plusieurs ligne on met un pipe 
+        run: |
           echo "Hello world"
           echo "Second line"
 
