@@ -23,7 +23,7 @@ jobs:
       - name : "Install dependencies"
         run: | 
           npm install
-          run -v
+          node -v
 
       - name: "First step"
         run: | # si il y a plusieurs ligne on met un pipe 
