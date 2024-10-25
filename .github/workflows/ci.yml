@@ -2,12 +2,19 @@ name: CI
 
 on:
   push: ~
+  workflow_dispatch: # permet de lancer le workflow manuellement
 
 jobs:
   init:
     name: "Say hello"
     runs-on: ubuntu-latest
     steps:
+      - name: "checkout"
+        uses: actions/checkout@v4
+
+      - name: "List files"
+        run: ls
+
       - name: "First step"
         run: | # si il y a plusieurs ligne on met un pipe 
           echo "Hello world"
